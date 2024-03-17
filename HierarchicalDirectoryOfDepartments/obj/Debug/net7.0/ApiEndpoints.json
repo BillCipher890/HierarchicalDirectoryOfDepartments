@@ -1,0 +1,166 @@
+[
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "AddCompany",
+    "RelativePath": "api/Company",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "HierarchicalDirectoryOfDepartments.Models.HierarhyModels.Company",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "DeleteCompany",
+    "RelativePath": "api/Company",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "HierarchicalDirectoryOfDepartments.Models.HierarhyModels.Company",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "AddDepartment",
+    "RelativePath": "api/Department",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "HierarchicalDirectoryOfDepartments.Models.HierarhyModels.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "DeleteDepartment",
+    "RelativePath": "api/Department",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "HierarchicalDirectoryOfDepartments.Models.HierarhyModels.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "AddDivision",
+    "RelativePath": "api/Division",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "division",
+        "Type": "HierarchicalDirectoryOfDepartments.Models.HierarhyModels.Division",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "DeleteDivision",
+    "RelativePath": "api/Division",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "division",
+        "Type": "HierarchicalDirectoryOfDepartments.Models.HierarhyModels.Division",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "ReplaceDepartment",
+    "RelativePath": "api/ReplaceDepartment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCompanyGuid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentGuid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.API.HierarchyApi",
+    "Method": "ReplaceDivision",
+    "RelativePath": "api/ReplaceDivision",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newDepartmentGuid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "divisionGuid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.Controllers.HomeController",
+    "Method": "ExportXML",
+    "RelativePath": "ExportXML",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HierarchicalDirectoryOfDepartments.Controllers.HomeController",
+    "Method": "ImportXML",
+    "RelativePath": "ImportXML",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "XMLFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+<ol>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <li class="ui-widget-content">
+            <a>@Model[i].Name</a>
+            <ol>
+                @for (int j = 0; j < Model[i].Departments.Count; j++)
+                {
+                    <li class="department ui-widget-content">
+                        <a>@Model[i].Departments[j].Name</a>
+                        <ol>
+                            @for (int k = 0; k < Model[i].Departments[j].Divisions.Count; k++)
+                            {
+                                <li class="section ui-widget-content">
+                                    <a>@Model[i].Departments[j].Divisions[k].Name</a>
+                                </li>
+                            }
+                        </ol>
+                    </li>
+                }
+            </ol>
+        </li>
+    }
+</ol>
+</div>
+
+<div class="">
+    <form class="mb-2" action="@Url.Action("ExportXML", null)" method="post">
+        <button type="submit" class="btn btn-outline-secondary">ExportXML</button>
+    </form>
+
+    <form class="input-group" action="@Url.Action("ImportXML", null)" method="post" enctype="multipart/form-data">
+        <input type="file" class="form-control" id="inputFile" aria-label="Upload" name="XMLFile" />
+        <button type="submit" class="btn btn-outline-secondary" id="inputFile">ImportXML</button>
+    </form>
+</div>
+
+
